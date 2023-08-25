@@ -28,10 +28,10 @@ match l1 with
 
 Agora, podemos pensar na generalização das funções acima
 ```ocaml 
-let rec fold op base lista = 
+let rec fold_right op base lista = 
 match lista with
 | [] -> base
-| h :: t -> op h (fold op base t)
+| h :: t -> op h (fold_right op base t)
 ;;
 ```
 
@@ -39,18 +39,11 @@ A função acima é a List.fold_right (já que as operações são aplicadas doi
 Ex: 03
 Implementando o fold left:
 ```ocaml
-let rec fold op base lista aux  = 
-match lista with
-| [] -> aux
-| h :: t -> fold op base t (op h aux);;
 
-let fold_left op base lista = fold op base lista base;;
-
-(* Podemos perceber que temos algumas coisas desnecessárias na lista acima *)
-let rec fold op lista base  = 
+let rec fold_left op base lista  = 
 match lista with
 | [] -> base
-| h :: t -> fold op t (op h base);;
+| h :: t -> fold_left op (op base h) t;;
 
 
 ```
@@ -59,10 +52,8 @@ match lista with
 Contando os elementos de uma lista usando uma função de alta ordem.
 Ex 04: Defina uma função que receba uma lista e que retorna o número de elementos dela usando fold_left.
 
-Há algum erro no fold_left 
 ```ocaml
 fold_left (fun cont_primeiros _ -> cont_primeiros + 1) 0 [1;2;3;4;5];;
-(* Está resultando o número 6*)
 ``` 
 
 Revisar os comandos a partir de 24 a 31. 
