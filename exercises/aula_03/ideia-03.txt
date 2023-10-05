@@ -1,0 +1,3 @@
+Pedir nome -> verificar se é vazio, se for vazio chamar a função de imprimir nomes por idade
+se não for vazio, pedir o nome e recomeçar e chamar a função de pedir nome recursivamente
+
