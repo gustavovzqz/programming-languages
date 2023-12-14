@@ -1,0 +1,3 @@
+(executable
+ (name data_race)
+ (libraries domainslib))
