@@ -40,7 +40,7 @@ match l1 with
 -: val zip : 'a list -> 'b list -> ('a * 'b) list = <fun>
 ```
 
-Há outros casos em que o match é usado aninhado, por isso, há um açúcar sintático para simplificar o problema.
+Há outros casos em que o match é usado aninhado, por isso, há um açúcar sintático para simplificar.
 
 ```ocaml 
 let rec zip2 (l1 : 'a list) (l2 : 'b list) : ('a * 'b) list = 

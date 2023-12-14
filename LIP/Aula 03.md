@@ -36,7 +36,7 @@ print_endline a; printar_numeros t num
 end
 
 ;;
-``` 
+fprintf``` 
 
 Dúvida: 
 Vamos supor que temos que:

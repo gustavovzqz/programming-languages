@@ -1,4 +1,4 @@
-### Tipos Recursivos 
+	### Tipos Recursivos 
 - Definindo o conjunto dos naturais:
 ```ocaml
 type nat = Zero | Suc of nat ;;
@@ -17,6 +17,7 @@ match n with
 ```ocaml
 type lista_int = Vazia | Cons of int * lista_int;;
 (* Mais fácil de entender! *)
+	Cons(1, Cons(2, Cons(3, Vazia)));;;
 let rec imprimir_lista_int lista =
 match lista with 
 | Vazia -> print_endline "[]"
@@ -32,12 +33,13 @@ imprimir_lista_int (Cons (3, Cons (1, Cons (3, Vazia)))) (* Talvez dê erro por 
 type tree =
         | Leaf
         | Node of int * tree * tree;;
-        
-(* Isso acabou sendo um percurso pós-ordem/em-ordem sla *)
-let rec imprimir_em_ordem arv = 
-        match arv with
-        | Leaf -> ()
-        | Node(num, esq, dir) -> print_int num; print_endline "" ; imprimir_em_ordem esq; imprimir_em_ordem dir;;
+
+let rec imprimir_em_ordem arv =
+	match arv with
+	| Leaf -> ()
+	| Node(num, esq, dir) -> imprimir_em_ordem esq; Printf.printf " %d" num; imprimir_em_ordem dir
+
+;;
 ```
 
 #### Função que não é recursiva de cauda:
@@ -59,3 +61,4 @@ match lista with
 (* (iterar [@tailcall]) retorna uma mensagem do compilador caso não seja tailcall *)
 (* As chamadas anteriores não tem real impacto na chamada posterior *)
 ```
+

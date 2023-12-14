@@ -43,14 +43,14 @@ let amanha = {dia = hoje.dia + 1 ... }
 
 let ontem = {hoje with dia = hoje.dia - 1} 
 (*O resto não muda, só muda o que explicitarmos *)
-let daqui_1_mes_dia = {hoje with dia = hoje.dia _ 1; mes = hoje.mes+1};;
+let daqui_1_mes_dia = {hoje with dia = hoje.dia + 1; mes = hoje.mes+1};;
 ```
 
 #### Variants
 São como um tipo união. (Temos um valor ou outro)
 
 ```ocaml
-type tipo_usuario - Estudante | Docente | TecADM ;; (* enumerável *)
+type tipo_usuario = Estudante | Docente | TecADM ;; (* enumerável *)
 let preco_ru usuario = 
 match usuario with
 | Estudante -> 1.10
