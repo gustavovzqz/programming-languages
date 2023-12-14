@@ -1,5 +1,5 @@
 # LIP
-Anotações baseadas nas aulas ministradas pelo professor Pablo Mayckon Silva Farias pela disciplina de Linguaguagens de Programação na UFC.
+Anotações baseadas nas aulas ministradas pelo professor Pablo Mayckon Silva Farias pela disciplina de Linguagens de Programação na UFC.
 
 A formatação das primeiras aulas não está feita (os códigos não diferem de textos).
 
