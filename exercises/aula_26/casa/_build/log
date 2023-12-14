@@ -1,0 +1,288 @@
+# dune fmt
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/gustavofvv/Faculdade/S4/LIP/aula_26/casa
+# Auto-detected concurrency: 8
+$ /home/gustavofvv/.opam/5.0.0/bin/ocamlc.opt -config > /tmp/dune_e8a5a7_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/home/gustavofvv/.opam/5.0.0/bin"
+#  ; ocaml = Ok External "/home/gustavofvv/.opam/5.0.0/bin/ocaml"
+#  ; ocamlc = External "/home/gustavofvv/.opam/5.0.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/gustavofvv/.opam/5.0.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/gustavofvv/.opam/5.0.0/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/gustavofvv/.opam/5.0.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/home/gustavofvv/.opam/5.0.0/lib/ocaml:/home/gustavofvv/.opam/5.0.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/gustavofvv/.opam/5.0.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/home/gustavofvv/Faculdade/S4/LIP/aula_26/casa"
+#        ; "INSIDE_DUNE" :
+#            "/home/gustavofvv/Faculdade/S4/LIP/aula_26/casa/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/gustavofvv/Faculdade/S4/LIP/aula_26/casa/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/gustavofvv/Faculdade/S4/LIP/aula_26/casa/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/gustavofvv/Faculdade/S4/LIP/aula_26/casa/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/home/gustavofvv/.opam/5.0.0/lib/ocaml"
+#      ; External "/home/gustavofvv/.opam/5.0.0/lib"
+#      ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "5.0.0"
+#      ; standard_library_default = "/home/gustavofvv/.opam/5.0.0/lib/ocaml"
+#      ; standard_library = "/home/gustavofvv/.opam/5.0.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X032"
+#      ; cmi_magic_number = "Caml1999I032"
+#      ; cmo_magic_number = "Caml1999O032"
+#      ; cma_magic_number = "Caml1999A032"
+#      ; cmx_magic_number = "Caml1999Y032"
+#      ; cmxa_magic_number = "Caml1999Z032"
+#      ; ast_impl_magic_number = "Caml1999M032"
+#      ; ast_intf_magic_number = "Caml1999N032"
+#      ; cmxs_magic_number = "Caml1999D032"
+#      ; cmt_magic_number = "Caml1999T032"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /home/gustavofvv/.opam/5.0.0/bin/ocamlformat --impl mergesort.ml) > _build/default/.formatted/mergesort.ml
+$ /usr/bin/git --no-pager diff --no-index --color=always -u _build/default/mergesort.ml _build/default/.formatted/mergesort.ml
+> diff --git a/_build/default/mergesort.ml b/_build/default/.formatted/mergesort.ml
+> index 4855c60..dfe3ca3 100644
+> --- a/_build/default/mergesort.ml
+> +++ b/_build/default/.formatted/mergesort.ml
+> @@ -1,50 +1,41 @@
+> -        
+> -let intercalar v inicio fim = 
+> -    let n = fim - inicio + 1 in 
+> -    let meio = (inicio + fim) / 2 in (* 6 *) 
+> -    let a = Array.make n 0 in  (* [0, 0, 0, 0, 0 ,0|]*)
+> -    let k = ref 0 in 
+> -    let i = ref inicio in (* 4 *) 
+> -    let j = ref (meio + 1)  in (* 7 *)
+> -    begin 
+> -        while (!i <= meio && !j <= fim) do
+> -            if (v.(!i) < v.(!j)) 
+> -            then
+> -                begin
+> -                    (* Printf.printf "%d é menor que %d\n" v.(!i) v.(!j); *)
+> -                    a.(!k) <- v.(!i);
+> -                    (* Printf.printf "A[%d] recebeu %d\n" !k v.(!i); *)
+> -                    i := !i + 1; 
+> -                    k := !k + 1;
+> -                end
+> -            else 
+> -                begin 
+> -                    a.(!k) <- v.(!j);
+> -                    j := !j + 1;
+> -                    k := !k + 1
+> -                end
+> -        done;
+> -
+> -
+> -
+> -        while (!i <= meio) do
+> -            a.(!k) <- v.(!i);
+> -            i := !i + 1;
+> -            k := !k + 1
+> -        done;
+> -        
+> -
+> -        while (!j <= fim) do 
+> -            a.(!k) <- v.(!j);
+> -            j := !j + 1;
+> -            k := !k + 1
+> -        done;
+> -    end;
+> -    for c = 0 to (Array.length a - 1) do
+> -        v.(inicio + c) <- a.(c)
+> -    done
+> -;;
+> -
+> +let intercalar v inicio fim =
+> +  let n = fim - inicio + 1 in
+> +  let meio = (inicio + fim) / 2 in
+> +  (* 6 *)
+> +  let a = Array.make n 0 in
+> +  (* [0, 0, 0, 0, 0 ,0|]*)
+> +  let k = ref 0 in
+> +  let i = ref inicio in
+> +  (* 4 *)
+> +  let j = ref (meio + 1) in
+> +  (* 7 *)
+> +  while !i <= meio && !j <= fim do
+> +    if v.(!i) < v.(!j) then (
+> +      (* Printf.printf "%d é menor que %d\n" v.(!i) v.(!j); *)
+> +      a.(!k) <- v.(!i);
+> +      (* Printf.printf "A[%d] recebeu %d\n" !k v.(!i); *)
+> +      i := !i + 1;
+> +      k := !k + 1)
+> +    else (
+> +      a.(!k) <- v.(!j);
+> +      j := !j + 1;
+> +      k := !k + 1)
+> +  done;
+> +
+> +  while !i <= meio do
+> +    a.(!k) <- v.(!i);
+> +    i := !i + 1;
+> +    k := !k + 1
+> +  done;
+> +
+> +  while !j <= fim do
+> +    a.(!k) <- v.(!j);
+> +    j := !j + 1;
+> +    k := !k + 1
+> +  done;
+> +  for c = 0 to Array.length a - 1 do
+> +    v.(inicio + c) <- a.(c)
+> +  done
+>  
+>  (*
+>     4 5 6 1 2 3 
+> @@ -52,45 +43,37 @@ let intercalar v inicio fim =
+>  
+>     *)
+>  
+> -
+> -
+> -
+> -    
+> -
+>  let rec m_sort_seq l i j =
+> -    if j <= i then ()
+> -    else
+> -    let k = (i + j) / 2 in 
+> -    m_sort_seq l i k; (* Ordena primeira metade *)
+> -    m_sort_seq l (k + 1) j; (* Ordena segunda metade *)
+> +  if j <= i then ()
+> +  else
+> +    let k = (i + j) / 2 in
+> +    m_sort_seq l i k;
+> +    (* Ordena primeira metade *)
+> +    m_sort_seq l (k + 1) j;
+> +    (* Ordena segunda metade *)
+>      intercalar l i j
+> -;; 
+>  
+> +module Task = Domainslib.Task
+>  
+> -module Task = Domainslib.Task;;
+> -
+> -let merge_sort_paral vetor pool lim_inf  = 
+> -    let rec m_sort l i j =
+> -        if (j - i) <= lim_inf then 
+> -            m_sort_seq l i j
+> -        else 
+> -        if j <= i then ()
+> -        else
+> -        let k = (i + j) / 2 in 
+> -        let p1 = Task.async pool (fun _ -> m_sort l i k) in  (* Ordena primeira metade *)
+> -        let p2 = Task.async pool (fun _ -> m_sort l (k + 1) j) in
+> -        Task.await pool p1;
+> -        Task.await pool p2;
+> -        intercalar l i j 
+> -    in 
+> -    Task.run pool (fun _ -> m_sort vetor 0 (Array.length vetor - 1))
+> -;;
+> -
+> -let () = 
+> -    let a = Array.init 4000 (fun _ -> Random.int 10000) in
+> -    let total_threads = Domain.recommended_domain_count () in 
+> -    let pool = Task.setup_pool ~num_domains:(total_threads - 1) () in 
+> -    merge_sort_paral a pool 20; 
+> -    Array.iter (fun i -> Printf.printf "%d " i ) a;
+> -    Task.teardown_pool pool
+> -;;
+> \ No newline at end of file
+> +let merge_sort_paral vetor pool lim_inf =
+> +  let rec m_sort l i j =
+> +    if j - i <= lim_inf then m_sort_seq l i j
+> +    else if j <= i then ()
+> +    else
+> +      let k = (i + j) / 2 in
+> +      let p1 = Task.async pool (fun _ -> m_sort l i k) in
+> +      (* Ordena primeira metade *)
+> +      let p2 = Task.async pool (fun _ -> m_sort l (k + 1) j) in
+> +      Task.await pool p1;
+> +      Task.await pool p2;
+> +      intercalar l i j
+> +  in
+> +  Task.run pool (fun _ -> m_sort vetor 0 (Array.length vetor - 1))
+> +
+> +let () =
+> +  let a = Array.init 4000 (fun _ -> Random.int 10000) in
+> +  let total_threads = Domain.recommended_domain_count () in
+> +  let pool = Task.setup_pool ~num_domains:(total_threads - 1) () in
+> +  merge_sort_paral a pool 20;
+> +  Array.iter (fun i -> Printf.printf "%d " i) a;
+> +  Task.teardown_pool pool
+[1]

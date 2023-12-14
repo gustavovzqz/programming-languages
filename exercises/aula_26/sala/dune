@@ -1,0 +1,3 @@
+(executable
+ (name sala)
+ (libraries domainslib))
