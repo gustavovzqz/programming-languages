@@ -3,7 +3,7 @@ Anotações e exercícios baseadas nas aulas ministradas pelo professor Pablo Ma
 
 A formatação das primeiras aulas não está feita (os códigos não diferem de textos).
 
-As aulas faltantes referem-se as teóricas sobre cálculo lambda simplesmente tipado. Há apenas uma pequena introdução que eu mantive.
+As aulas faltantes referem-se às teóricas sobre Cálculo Lambda Simplesmente Tipado. Há apenas uma pequena introdução que eu mantive.
 
 Nos exercícios, não realizei o de todas as aulas e a maior parte não acompanha a descrição do problema.
 
