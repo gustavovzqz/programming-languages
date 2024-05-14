@@ -10,5 +10,3 @@ Nos exercícios, não realizei o de todas as aulas e a maior parte não acompanh
 Essas são anotações pessoais minhas e inicialmente não foram feitas para serem publicadas, então há diversas afirmações informais que, se levadas ao pé da letra, podem soar como erradas.
 
 Qualquer erro teórico/prático é de total responsabilidade minha.
-
-Com as informações acima ditas, espero que esse repositório seja útil de alguma forma para o leitor.
